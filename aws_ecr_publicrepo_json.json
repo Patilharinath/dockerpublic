@@ -1,0 +1,12 @@
+﻿{
+  "version": "3",
+  "services": {
+    "nginx": {
+      "image": "public.ecr.aws/docker/library/vault:1.13.3",
+      "container_name": "my_vault_app",
+      "ports": [
+        "8200:8200"
+      ]
+    }
+  }
+}
