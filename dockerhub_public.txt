@@ -1,0 +1,12 @@
+version: '3'
+services:
+  openspeedtest:
+    image: testing24/nginx:1.0.1
+    container_name: my_nginx_app
+    ports:
+      - '31108:8080'
+    networks:
+      - my_network
+
+networks:
+  my_network:

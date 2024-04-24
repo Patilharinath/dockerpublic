@@ -1,0 +1,13 @@
+version: '3'
+services:
+  openspeedtest:
+    image: rishi1401/mypersonalrepo:speedtest
+    container_name: my_speedtest_app
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    networks:
+      - my_network
+
+networks:
+  my_network:
